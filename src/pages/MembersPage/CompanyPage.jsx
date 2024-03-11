@@ -17,9 +17,7 @@ function CompanyPage() {
           <h1 className="text-white font-bold text-8xl w-1/2">
             Startup Companies
           </h1>
-          <div className="mt-20">
-            <CarouselCompany />
-          </div>
+          <div className="mt-20">{/* <CarouselCompany /> */}</div>
           <div className="flex align-center justify-center m-10">
             <Button
               size="lg"
