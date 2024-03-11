@@ -12,7 +12,8 @@ module.exports = withMT({
         // Add custom color here
         companyBG: '#08112F',
         CustomOrange: '#FF7A00',
-        discoverWhite: '#F9F9F9'
+        discoverWhite: '#F9F9F9',
+        customLBlue: '#599EF3',
       },
     },
   },

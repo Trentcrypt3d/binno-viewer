@@ -2,6 +2,7 @@ import React from "react";
 import BlogsContent from "./Contents/BlogsContent.jsx";
 import GuidesContent from "./Contents/GuideContent.jsx";
 import EventsContent from "./Contents/EventsContent.jsx";
+import CommunityPage from "./Contents/CommunityPage.jsx";
 
 function MemberContent() {
   return (
@@ -49,6 +50,9 @@ function MemberContent() {
           <div className="flex flex-row m-10 ">
             <GuidesContent />
           </div>
+        </div>
+        <div className="flex">
+          <CommunityPage />
         </div>
       </div>
     </>

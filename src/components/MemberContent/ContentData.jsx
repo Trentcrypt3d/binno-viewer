@@ -166,3 +166,25 @@ export const guides = [
       "Lorem ipsum dolor sit amet. Et dolor pariatur est voluptas laudantium vel reprehenderit fugit qui consequatur dolores qui explicabo vero. Ut illo perferendis et dicta deleniti et galisum repudiandae.",
   },
 ];
+export const members = [
+  {
+    id: "1",
+    usertype: "Startup Company",
+    userCount: "19",
+  },
+  {
+    id: "2",
+    usertype: "Startup Enabler",
+    userCount: "21",
+  },
+  {
+    id: "3",
+    usertype: "Mentor",
+    userCount: "13",
+  },
+  {
+    id: "4",
+    usertype: "Visits",
+    userCount: "20",
+  },
+];
