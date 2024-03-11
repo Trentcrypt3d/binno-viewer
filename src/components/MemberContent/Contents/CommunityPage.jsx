@@ -5,17 +5,18 @@ function CommunityPage() {
   return (
     <>
       {/* Community page container */}
-      <div className="flex flex-row my-40 w-full">
-        <div className="flex grow justify-center items-center max-w-1/2">
-          <h1 className="text-CustomOrange font-bold text-5xl">
+      <div className="flex flex-row justify-center items-center my-40 w-full mx-0">
+        {/* text container */}
+        <div className="flex mx-40 max-w-1/2">
+          <h1 className="text-CustomOrange font-bold text-5xl w-full max-w-80">
             Be part of our growing community
           </h1>
         </div>
         {/* community count container grid format*/}
-        <div className="grid grid-cols-2 mx-40">
+        <div className="grid grid-cols-2 mx-35">
           {members.map((member) => (
-            // layout container
-            <div className="flex items-center justify-center">
+            // cards gap
+            <div className="mx-5">
               {/* card design */}
               <div className=" bg-white p-8 m-5 w-full max-w-50 rounded">
                 {/* content alignment */}
