@@ -14,6 +14,7 @@ module.exports = withMT({
         CustomOrange: '#FF7A00',
         discoverWhite: '#F9F9F9',
         customLBlue: '#599EF3',
+      customBorder: '#D9D9D9',
       },
     },
   },
