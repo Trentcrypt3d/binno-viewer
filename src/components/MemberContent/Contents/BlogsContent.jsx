@@ -8,7 +8,10 @@ function BlogsContent() {
       <div className="flex">
         {blogs.map((blog) => (
           // cards
-          <div className="bg-white rounded-lg flex flex-col mx-5 p-5 max-w-30">
+          <div
+            className="bg-white rounded-lg flex flex-col mx-5 p-5 max-w-30"
+            key={blog.id}
+          >
             {/* title description container */}
             <div className="flex flex-col">
               <h2 className="text-black font-bold text-xl mb-1">

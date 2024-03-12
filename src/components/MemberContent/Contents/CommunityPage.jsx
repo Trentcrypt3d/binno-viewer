@@ -16,7 +16,7 @@ function CommunityPage() {
         <div className="grid grid-cols-2 mx-35">
           {members.map((member) => (
             // cards gap
-            <div className="mx-5">
+            <div className="mx-5" key={member.id}>
               {/* card design */}
               <div className=" bg-white p-8 m-5 w-full max-w-50 rounded">
                 {/* content alignment */}

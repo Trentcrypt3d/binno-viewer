@@ -11,7 +11,10 @@ function EventsContent() {
       <div className="flex">
         {events.map((event) => (
           // cards
-          <div className="bg-white rounded-lg flex flex-col mx-5 p-5 max-w-30">
+          <div
+            className="bg-white rounded-lg flex flex-col mx-5 p-5 max-w-30"
+            key={event.id}
+          >
             {/* title description container */}
             <div className="flex flex-col">
               <div className="flex flex-col">
