@@ -3,7 +3,7 @@ import NavBar from "../../components/NavBar.jsx";
 import CarouselCompany from "../../components/CompaniesCarousel/CarouselCompany.jsx";
 import { Button } from "@material-tailwind/react";
 
-function CompanyPage() {
+function MembersPage() {
   return (
     <>
       {/*member page container*/}
@@ -32,4 +32,4 @@ function CompanyPage() {
   );
 }
 
-export default CompanyPage;
+export default MembersPage;
