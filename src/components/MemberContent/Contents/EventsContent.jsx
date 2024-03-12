@@ -11,37 +11,39 @@ function EventsContent() {
       <div className="flex">
         {events.map((event) => (
           // cards
-          <div
-            className="bg-white rounded-lg flex flex-col mx-5 p-5 max-w-30"
-            key={event.id}
-          >
-            {/* title description container */}
-            <div className="flex flex-col">
+          <a href="">
+            <div
+              className="bg-white rounded-lg flex flex-col mx-5 p-5 max-w-30"
+              key={event.id}
+            >
+              {/* title description container */}
               <div className="flex flex-col">
-                <h2 className="text-black font-bold text-xl mb-1">
-                  {event.eventTitle}
-                </h2>
-                <h2 className="text-black text-opacity-80 ">
-                  <LocationOnRoundedIcon />ㅤ{event.eventLocation}
-                </h2>
-                <h2 className="text-black text-opacity-80 ">
-                  <CalendarMonthRoundedIcon />ㅤ{event.date}
-                </h2>
-                <h2 className="text-black text-opacity-80 mb-1">
-                  <AccessTimeRoundedIcon />ㅤ{event.time}
-                </h2>
-              </div>
+                <div className="flex flex-col">
+                  <h2 className="text-black font-bold text-xl mb-1">
+                    {event.eventTitle}
+                  </h2>
+                  <h2 className="text-black text-opacity-80 ">
+                    <LocationOnRoundedIcon />ㅤ{event.eventLocation}
+                  </h2>
+                  <h2 className="text-black text-opacity-80 ">
+                    <CalendarMonthRoundedIcon />ㅤ{event.date}
+                  </h2>
+                  <h2 className="text-black text-opacity-80 mb-1">
+                    <AccessTimeRoundedIcon />ㅤ{event.time}
+                  </h2>
+                </div>
 
-              <p className="text-black text-opacity-80 mb-1 text-base">
-                {event.eventDescription}
-              </p>
+                <p className="text-black text-opacity-80 mb-1 text-base">
+                  {event.eventDescription}
+                </p>
+              </div>
+              {/* footer container */}
+              <div className="flex items-center flex-row m-1 mt-3">
+                <Avatar src={event.profilePic} alt="profile picture" />
+                <h2 className="text-black mx-2 font-bold">{event.username}</h2>
+              </div>
             </div>
-            {/* footer container */}
-            <div className="flex items-center flex-row m-1 mt-3">
-              <Avatar src={event.profilePic} alt="profile picture" />
-              <h2 className="text-black mx-2 font-bold">{event.username}</h2>
-            </div>
-          </div>
+          </a>
         ))}
       </div>
     </>
