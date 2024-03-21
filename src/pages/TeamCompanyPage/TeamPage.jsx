@@ -1,4 +1,5 @@
 import React from "react";
+import CarouselTeam from "../../pages/Company Page/Carousel_Swiper_Team"
 
 function TeamPage() {
   return (
@@ -9,6 +10,8 @@ function TeamPage() {
           <h1 className="text-9xl bg-gradient-to-r from-companyBG from-60% to-discoverWhite to-40% font-bold m-5 bg-clip-text text-transparent">
             Meet the Team
           </h1>
+        <CarouselTeam/>
+
         </div>
       </div>
       <div></div>
