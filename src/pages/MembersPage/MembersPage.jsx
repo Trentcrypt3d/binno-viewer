@@ -1,32 +1,47 @@
 import React from "react";
 import NavBar from "../../components/NavBar.jsx";
 import CarouselCompany from "../../components/CompaniesCarousel/CarouselCompany.jsx";
-import CarouselFilter from "../../pages/Company Page/Carousel_Swiper_Company.jsx"
+import CarouselFilter from "../../pages/Company Page/Carousel_Swiper_Company.jsx";
 import { Button } from "@material-tailwind/react";
 
 function MembersPage() {
   return (
     <>
-      {/*member page container*/}
-      <div className="flex flex-col h-lvh w-full bg-companyBG">
-        {/* nav bar container */}
-        <div className="flex w-full max-h-20">
-          {/* <NavBar /> */}
-        </div>
-        {/* Company Content*/}
-        <div className="flex flex-col border border-red-500 w-4/6 p-10 mt-10">
-          <h1 className="text-white font-bold text-8xl w-1/2">
-            Startup Companies
-          </h1>
-          <div className="mt-20"><CarouselFilter/></div>
-          <div className="flex align-center justify-center m-10">
-            
-            <Button
-              size="lg"
-              className="flex bg-CustomOrange justify-center items-center gap-3 w-1/2"
-            >
-              Visit Startup Companies
-            </Button>
+      {/* member page container */}
+      <div className="flex flex-col items-center w-full bg-companyBG">
+        {/* Company Content */}
+        <div className="flex flex-grow justify-between mt-10">
+          <div className="flex flex-col border border-red-500 w-4/6 mt-10 overflow-hidden">
+            <h1 className="text-white font-bold text-8xl w-1/2">
+              Startup Companies
+            </h1>
+            <div className=" mt-4"><CarouselFilter/></div>
+            <div className="flex justify-center mt-10 mb-32">
+              <Button
+                size="lg"
+                className="flex translate-x-[-50px] bg-CustomOrange justify-center items-center gap-3 w-1/2"
+              >
+                Visit Startup Companies
+              </Button>
+            </div>
+          </div>
+
+          <div className="flex flex-col border border-red-500 w-2/6 justify-end items-center mt-10 pb-10">
+            <div className="flex justify-center">
+              <div className="card"></div>
+            </div>
+            <div className="flex justify-center translate-y-[-80px] translate-x-[-100px]">
+              <div className="card"></div>
+            </div>
+            <div className="flex justify-center translate-y-[-150px] translate-x-[100px]">
+              <div className="card"></div>
+    
+            </div>
+                    <div className="absolute translate-y-[-250px]">
+      <h1 className="text-orange-500 text-4xl font-semibold"> Fill your startup here</h1>
+      <p>Do not be afraid to start your own</p>
+    </div>
+            {/* Add more divs as needed */}
           </div>
         </div>
       </div>

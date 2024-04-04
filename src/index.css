@@ -244,7 +244,7 @@ width: 100%;
   position: absolute;
   bottom: 0;
 
-  width:95%;
+  width: 267px;
   height: 73%;
   z-index: -1;
   backdrop-filter: blur(10px) saturate(200%);
@@ -256,38 +256,74 @@ width: 100%;
 
 
 /* .swiper */
-.TeamSwiper {
-  position: relative; 
-  width: 600px;
-}
+
 
 .MySwiper{
 
-width: 70%;
+width: 93%;
 
 }
 
 .TeamSwiper .swiper-slide img {
-  margin-top: 100px;
+  /* margin-top: 100px; */
   display: block;
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
 }
 
+.TeamSwiper {
+  position: absolute; 
+  width: 100%;
+  margin-right: 300px;
+  
+}
+
 .done{
-  height: 900px !important;
  transform: translateY(-18px);
+ height: 280px !important;
  
  }
 
- .fit{
-margin-right: 200px;
+ .card {
+  backdrop-filter: blur(5px) saturate(73%);
+  -webkit-backdrop-filter: blur(5px) saturate(73%);
+  background-color: rgba(14, 58, 139, 0.54);
+  border-radius: 12px;
+  height: 156px;
+  width: 239px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  opacity: 0.8;
+  transition: opacity 0.3s; /* Add transition for smooth hover effect */
+}
 
+.card:hover {
+  opacity: 2; /* Change opacity on hover */
+}
+
+
+ .fit{
+opacity: 0;
+transition: opacity 0.3 ease;
+ }
+
+ /* Custom CSS for 30% right position */
+.right-30p {
+  right: 24%;
+}
+
+
+ /* Custom utility class for 30% right margin */
+
+
+
+ .non-active{
+  filter: grayscale(1);
+  transform: translateY(38px);
  }
 
  .fits{
-  margin-left: 200px;
+  display: none;
   
    }
 

@@ -4,14 +4,17 @@ const CardFormat = ({ imageUrl, size }) => {
   let cardSizeClass = '';
   switch (size) {
     case 'big':
-      cardSizeClass = 'h-48 w-48';
+      cardSizeClass = 'h-72 w-72';
       break;
     case 'small':
-      cardSizeClass = 'h-24 w-24';
+      cardSizeClass = 'h-36 w-36';
       break;
       case 'medium':
-        cardSizeClass = 'h-36 w-36';
+        cardSizeClass = 'h-48 w-48';
         break;
+        case 'xs':
+          cardSizeClass = 'h-36 w-36';
+          break;
     default:
       cardSizeClass = 'h-36 w-36';
       break;

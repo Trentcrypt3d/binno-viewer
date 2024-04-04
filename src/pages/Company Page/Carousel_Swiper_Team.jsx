@@ -7,7 +7,7 @@ import CarouselTeamData from "./Team_Data";
 
 
 function isDone(index, activeIndex, length) {
-  const doneIndex = (activeIndex + 2) % length;
+  const doneIndex = (activeIndex ) % length;
   return index === doneIndex || index + length === doneIndex;
 }
 
@@ -38,28 +38,30 @@ function CarouselTeam() {
       }}
       grabCursor={false}
       centeredSlides={true}
-      spaceBetween={-600}
-      pagination={{
-        clickable: true,
-      }}
+      spaceBetween={-800}
+     
       navigation={true}
       onSlideChange={handleSlideChange}
       breakpoints={{
         "@0.00": {
-          slidesPerView: 4,
-          spaceBetween: -180,
+          slidesPerView: 5,
+          spaceBetween: 0,
+        },
+        "@0.67": {
+          slidesPerView: 5,
+          spaceBetween: 0,
         },
         "@0.75": {
-          slidesPerView: 4,
-          spaceBetween: -180,n: 0,
+          slidesPerView: 5,
+          spaceBetween: 0,
         },
         "@1.00": {
-          slidesPerView: 4,
-          spaceBetween: -180,
+          slidesPerView: 5,
+          spaceBetween: 0,
         },
         "@1.50": {
-          slidesPerView: 4,
-          spaceBetween: -180,
+          slidesPerView: 5,
+          spaceBetween: 0,
         },
       }}
       modules={[Autoplay, Pagination, Navigation]}
@@ -67,22 +69,23 @@ function CarouselTeam() {
     >
       {CarouselTeamData.map((team, index) => (
         <SwiperSlide key={index}>
-          <div className={`flex items-center justify-center ${index !== (activeIndex + 2) % CarouselTeamData.length ? 'grayscale' : ''}`}>
+          <div className={`flex items-center justify-center h-full w-full `}>
 
             <div className="m-5">
               <div className="flex items-center justify-center w-full">
                 {/* card container (parent container)*/}
-                <div className="flex flex-col justify-center items-center max-h-96 max-w-80">
+                <div className="flex flex-col justify-center items-center max-h-full max-w-full">
                   <img
-                   className={`flex h-full max-h-32 w-full object-cover object-center rounded 
+                   className={`flex h-full max-h-full w-full object-cover object-center rounded 
                    ${isDone(index, activeIndex, CarouselTeamData.length) ? 'done' : ''}
-                   ${isFit(index, activeIndex, CarouselTeamData.length) ? 'fit' : ''}`
+                   ${isFit(index, activeIndex, CarouselTeamData.length) ? 'fit' : ''}
+                   ${index !== (activeIndex) % CarouselTeamData.length ? 'non-active' : ''}`
                  }
                     src={team.profileCover}
                     alt="Profile Cover"
                   />
                   {/* content container */}
-                  <div className={`flex justify-center items-center flex-col ml-2 overflow-visible ${index !== (activeIndex + 2) % CarouselTeamData.length ? 'hidden' : ''}`}>
+                  <div className={`flex justify-center items-center flex-col ml-2 overflow-visible ${index !== (activeIndex) % CarouselTeamData.length ? 'hidden' : ''}`}>
                     <div className="flex m-1 font-bold text-sm text-orange-800">
                       {team.name}
                     </div>
