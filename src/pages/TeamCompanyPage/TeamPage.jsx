@@ -12,7 +12,7 @@ function TeamPage() {
           Meet the Team
         </h1>
       </div>
-      <div className="relative left-0 w-full h-96 flex items-center border border-red-500">
+      <div className="relative left-0 w-full h-96 flex items-center">
         <CarouselTeam />
       </div>
       </div>
