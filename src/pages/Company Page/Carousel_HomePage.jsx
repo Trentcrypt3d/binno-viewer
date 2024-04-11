@@ -4,6 +4,7 @@ import EnablerPage from "./Carousel_Enabler";
 import CompanyPage from "./CompanyPage"
 import MembersPage from "../MembersPage/MembersPage";
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import logo from "../../assets/BiNNO_white.svg"
 
 export function CarouselCustomNavigation() {
   return (
@@ -18,9 +19,9 @@ export function CarouselCustomNavigation() {
         <div className="absolute top-0 left-0 z-50 w-full h-12 bg-customColor backdrop-filter backdrop-blur-3xl bg-opacity-50 flex items-center">
           {/* SVG */}
           <img
-    src="./src/"
+    src= {logo}
     alt="User icon"
-    className="w-6 h-6 opacity-50 block cursor-pointer transition-all"
+    className="ml-4 h-36 block cursor-pointer cover"
   />
           {/* Navigation Indicators */}
           <div className="flex justify-end flex-grow gap-8">

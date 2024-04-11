@@ -11,7 +11,7 @@ function MembersPage() {
       <div className="flex flex-col items-center w-full bg-companyBG">
         {/* Company Content */}
         <div className="flex flex-grow justify-between mt-10">
-          <div className="flex flex-col border border-red-500 w-4/6 mt-10 overflow-hidden">
+          <div className="flex flex-col w-4/6 mt-10 overflow-hidden">
             <h1 className="text-white font-bold text-8xl w-1/2">
               Startup Companies
             </h1>
@@ -26,7 +26,7 @@ function MembersPage() {
             </div>
           </div>
 
-          <div className="flex flex-col border border-red-500 w-2/6 justify-end items-center mt-10 pb-10">
+          <div className="flex flex-col w-2/6 justify-end items-center ">
             <div className="flex justify-center">
               <div className="card"></div>
             </div>

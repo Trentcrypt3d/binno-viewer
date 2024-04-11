@@ -85,8 +85,8 @@ function CarouselTeam() {
                     alt="Profile Cover"
                   />
                   {/* content container */}
-                  <div className={`flex justify-center items-center flex-col ml-2 overflow-visible ${index !== (activeIndex) % CarouselTeamData.length ? 'hidden' : ''}`}>
-                    <div className="flex m-1 font-bold text-sm text-orange-800">
+                  <div className={`flex justify-center items-center flex-col ml-2 overflow-visible bg-companyBG p-2 px-4 opacity-80 rounded-xl ${index !== (activeIndex) % CarouselTeamData.length ? 'hidden' : ''}`}>
+                    <div className="flex  font-bold text-sm text-orange-800">
                       {team.name}
                     </div>
                     <div className="flex text-white text-sm">{team.role}</div>

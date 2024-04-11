@@ -40,7 +40,7 @@ function EnablerPage () {
           {/* Container for SVG */}
     
           
-          <svg class="absolute border h-[930px] w-[2050px]  border-red-500 bottom-[-100px]" viewBox="0 0 1440 550" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="absolute  h-[930px] w-[2050px]   bottom-[-100px]" viewBox="0 0 1440 550" fill="none" xmlns="http://www.w3.org/2000/svg">
     <rect  y="343" width="100%" height="40%" fill="white"/>
     <path d="M1015.5 202.5L1440 0V346H701L1015.5 202.9Z" fill="white"/>
 </svg>
@@ -53,7 +53,7 @@ function EnablerPage () {
   </div>
 </div>
 
-<div className="absolute bottom-24 right-64">
+<div className="absolute bottom-20 right-24">
 <svg width="430" height="383" viewBox="0 0 430 383" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.70837 0C1.25543 0.000497105 0.82119 0.180514 0.500916 0.50056C0.180642 0.820606 0.000497459 1.25454 0 1.70715V59.9345C0.000497459 60.3871 0.180642 60.8211 0.500916 61.1411C0.82119 61.4611 1.25543 61.6412 1.70837 61.6417H200.396C200.849 61.6412 201.283 61.4611 201.603 61.1411C201.923 60.8211 202.104 60.3871 202.104 59.9345V1.70715C202.104 1.25454 201.923 0.820606 201.603 0.50056C201.283 0.180514 200.849 0.000497105 200.396 0H1.70837Z" fill="#08112F"/>
 <path d="M4.2793 57.3638H197.821V4.27734H4.2793V57.3638Z" fill="white"/>

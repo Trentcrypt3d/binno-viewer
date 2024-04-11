@@ -1,5 +1,6 @@
 import react from "react";
 import CardContainer2 from "./Carousel_Circle_Mentor";
+import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 
 function MentorPage () {
   const imageUrls = [
@@ -41,9 +42,8 @@ return(
 
   {/* Container for SVG */}
 
-  
   <svg
-      class="absolute border h-[930px]   border-red-500 bottom-[-330px] object-fill" 
+      class="absolute h-[930px]  bottom-[-330px] object-fill" 
       width="auto"
       height="232"
       viewBox="0 0 1440 332"
@@ -56,11 +56,22 @@ return(
       />
     </svg>
 
+{/* parent div */}
+  <div className="absolute top-80 right-20">
+    <h1 className="text-CustomOrange font-bold">Are you qualified to mentor?</h1>
+    {/* mentor description */}
+    <div className="flex flex-col ml-8 mt-4">
+    <div className="flex items-center mb-2 "><CheckCircleOutlineIcon sx={{fontSize: '35px'}} /> <span className="text-3xl ml-2">Experienced in Industry</span></div>
+    <div className="flex items-center mb-2 "><CheckCircleOutlineIcon sx={{fontSize: '35px'}} /> <span className="text-3xl ml-2">Provide competitive advantage</span></div>
+    <div className="flex items-center mb-2 "><CheckCircleOutlineIcon sx={{fontSize: '35px'}} /> <span className="text-3xl ml-2">Guaranteed experts</span></div>
+    <div className="flex items-center mb-2 "><CheckCircleOutlineIcon sx={{fontSize: '35px'}} /> <span className="text-3xl ml-2">Coaching Skills</span></div>
+    </div>
+  </div>
 
 
 
-
-<div className="absolute bottom-24 right-64">
+{/* svg container */}
+<div className="absolute bottom-32 right-20 ">
 <svg width="392" height="456" viewBox="0 0 392 456" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M2.80151 226.231C4.24185 228.641 6.19209 230.704 8.51487 232.277C10.8376 233.85 13.4765 234.893 16.2454 235.334C19.0144 235.774 21.8461 235.602 24.5413 234.828C27.2364 234.054 29.7293 232.697 31.8444 230.854L90.9636 264.815L88.7602 229.412L32.9574 202.59C29.6301 199.237 25.1902 197.222 20.4789 196.928C15.7676 196.634 11.1124 198.081 7.39528 200.995C3.67817 203.909 1.15745 208.088 0.31079 212.739C-0.53587 217.39 0.350346 222.191 2.80151 226.231Z" fill="#FFB8B8"/>
 <path d="M244.855 105.428C268.083 105.428 286.913 86.5682 286.913 63.3037C286.913 40.0393 268.083 21.1797 244.855 21.1797C221.627 21.1797 202.797 40.0393 202.797 63.3037C202.797 86.5682 221.627 105.428 244.855 105.428Z" fill="#FFB8B8"/>
@@ -78,18 +89,19 @@ return(
 <path d="M159.065 312.463C158.641 312.463 158.223 312.364 157.844 312.175C157.465 311.985 157.135 311.709 156.881 311.369L150.185 302.427C149.969 302.14 149.812 301.813 149.723 301.465C149.633 301.117 149.613 300.754 149.664 300.399C149.714 300.043 149.835 299.7 150.017 299.391C150.2 299.082 150.442 298.812 150.729 298.596C151.016 298.38 151.343 298.224 151.69 298.135C152.038 298.046 152.4 298.026 152.755 298.077C153.11 298.128 153.452 298.249 153.76 298.432C154.069 298.616 154.338 298.858 154.553 299.146L158.934 304.996L170.185 288.092C170.384 287.792 170.639 287.534 170.937 287.333C171.235 287.132 171.57 286.992 171.922 286.921C172.274 286.85 172.637 286.849 172.99 286.919C173.342 286.988 173.677 287.127 173.976 287.326C174.275 287.526 174.532 287.783 174.732 288.082C174.931 288.381 175.07 288.717 175.14 289.07C175.21 289.423 175.21 289.786 175.139 290.139C175.068 290.492 174.929 290.827 174.729 291.126L161.337 311.246C161.094 311.609 160.769 311.91 160.387 312.122C160.004 312.333 159.577 312.45 159.141 312.462C159.115 312.463 159.09 312.463 159.065 312.463Z" fill="white"/>
 </svg>
 
-<div className="block">
+</div>
 
-<button class="bg-transparent text-CustomOrange py-2 px-4">
-Visit Startup Enablers
+{/* button container */}
+<div className="absolute bottom-20   right-48">
+<div className="flex flex-col mt-10">
+<button class="bg-CustomOrange transform hover:scale-x-110 hover:scale-y-105 transition duration-300 ease-out text-white py-2 px-48 m-2 border border-CustomOrange rounded-lg ">
+Apply Now
 </button>
-</div>
-<div className="flex">
-<button class="bg-CustomOrange transform hover:scale-x-110 hover:scale-y-105 transition duration-300 ease-out text-white py-2 px-12 border border-CustomOrange rounded ">
-Create Account
-</button>
+<button class="bg-discoverWhite border-customLBlue border text-customLBlue text-c py-2 px-36 mb-2 mx-2 rounded-lg">
+Visit Mentors</button>
 </div>
 </div>
+
   </div>
   
   {/* <div className="flex w-full h-dvh bg-orange-500"> </div> */}
