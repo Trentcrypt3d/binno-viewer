@@ -3,6 +3,12 @@ import { blogs } from "../ContentData.jsx";
 import Avatar from "@mui/material/Avatar";
 
 function BlogsContent() {
+
+
+
+
+
+  
   return (
     <>
       <div className="flex">

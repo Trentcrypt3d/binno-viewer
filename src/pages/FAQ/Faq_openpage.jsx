@@ -46,7 +46,7 @@ function Accordion() {
 
   const fetchFAQs = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/faqs');
+      const response = await axios.get(`${import.meta.env.VITE_BACKEND_DOMAIN}/faq/fetch`);
       setQuestions(response.data);
       setFilteredQuestions(response.data);
     } catch (error) {
@@ -86,9 +86,9 @@ function Accordion() {
           <ul className="flex flex-col">
             {filteredQuestions.map((faq, index) => (
               <AccordionItem
-                key={index}
-                title={faq.question}
-                content={faq.answer}
+                key={faq.faq_id}
+                title={faq.faq_title}
+                content={faq.faq_content}
               />
             ))}
           </ul>

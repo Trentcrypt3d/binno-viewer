@@ -17,19 +17,24 @@ import {
     const [email, setEmail] = useState('');
 
     const handleSubmit = async () => {
-        try {
-          await axios.post('http://localhost:5000/submitConcern', { 
-            email: email, 
-            concernDetail: concernDetail });
-          alert('Concern submitted successfully!');
-          setEmail('');
-          setConcernDetail('');
-        } catch (error) {
-          console.error('Error submitting concern:', error);
-          alert('Concern cannot be empty! Please share your concern');
-        }
-      };
-
+      if (!concernDetail) {
+        alert('Concern cannot be empty! Please share your concern');
+        return;
+      }
+  
+      try {
+        await axios.post(`${import.meta.env.VITE_BACKEND_DOMAIN}/uaq/upload`, {
+          email,
+          content: concernDetail,
+        });
+        alert('Concern submitted successfully!');
+        setEmail('');
+        setConcernDetail('');
+      } catch (error) {
+        console.error('Error submitting concern:', error);
+        alert('An error occurred. Please try again later.');
+      } 
+    };
 
     return (
         <div style={{ position: 'fixed', right: '25px', bottom: '25px' }}>
