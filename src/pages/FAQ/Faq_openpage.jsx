@@ -62,7 +62,7 @@ function Accordion() {
   };
 
   return (
-    <main className="p-5 bg-light-blue h-dvh w-dvw">
+    <main className="p-5 bg-light-blue w-dvw">
       <form>
         <div className='max-w-md mx-auto sm:w-1/4'>
           <div className="relative flex items-center w-full h-12 rounded-lg focus-within:shadow-lg border border-slate-500 overflow-hidden h-9">

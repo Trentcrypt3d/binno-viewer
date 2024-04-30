@@ -19,6 +19,19 @@ export default function FAQ() {
     }
   };
 
+  // useEffect(() => {
+  //   fetchFAQs();
+  // }, []);
+  // const fetchFAQs = async () => {
+  //   try {
+  //     const response = await axios.get('http://localhost:5000/faqs');
+  //     setQuestions(response.data);
+  //     setFilteredQuestions(response.data);
+  //   } catch (error) {
+  //     console.error('Error fetching FAQ data:', error);
+  //   }
+  // };
+
   return (
     // parent container
     <div className="w-full bg-white pt-20 flex flex-row overflow-hidden">

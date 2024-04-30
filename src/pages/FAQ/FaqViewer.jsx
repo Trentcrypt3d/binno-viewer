@@ -18,6 +18,19 @@ export default function FAQmore() {
     }
   };
 
+  // useEffect(() => {
+  //   fetchFAQs();
+  // }, []);
+  // const fetchFAQs = async () => {
+  //   try {
+  //     const response = await axios.get('http://localhost:5000/faqs');
+  //     setQuestions(response.data);
+  //     setFilteredQuestions(response.data);
+  //   } catch (error) {
+  //     console.error('Error fetching FAQ data:', error);
+  //   }
+  // };
+
   return (
     <div className="w-full h-full bg-white pt-20 overflow-x-hidden">
       <div className="w-full flex flex-col justify-center items-center">
