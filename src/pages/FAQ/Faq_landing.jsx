@@ -8,18 +8,18 @@ import { CarouselCustomNavigation } from "../Company Page/Carousel_HomePage.jsx"
 export default function FAQ() {
 
 
-  useEffect(() => {
-    fetchFAQs();
-  }, []);
-  const fetchFAQs = async () => {
-    try {
-      const response = await axios.get('http://localhost:5000/faqs');
-      setQuestions(response.data);
-      setFilteredQuestions(response.data);
-    } catch (error) {
-      console.error('Error fetching FAQ data:', error);
-    }
-  };
+  // useEffect(() => {
+  //   fetchFAQs();
+  // }, []);
+  // const fetchFAQs = async () => {
+  //   try {
+  //     const response = await axios.get('http://localhost:5000/faqs');
+  //     setQuestions(response.data);
+  //     setFilteredQuestions(response.data);
+  //   } catch (error) {
+  //     console.error('Error fetching FAQ data:', error);
+  //   }
+  // };
 
   return (
 

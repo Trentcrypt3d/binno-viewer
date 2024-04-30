@@ -7,18 +7,18 @@ import { SubscriptionPopover } from "./Faq_Popover";
 export default function FAQmore() {
 
 
-  useEffect(() => {
-    fetchFAQs();
-  }, []);
-  const fetchFAQs = async () => {
-    try {
-      const response = await axios.get('http://localhost:5000/faqs');
-      setQuestions(response.data);
-      setFilteredQuestions(response.data);
-    } catch (error) {
-      console.error('Error fetching FAQ data:', error);
-    }
-  };
+  // useEffect(() => {
+  //   fetchFAQs();
+  // }, []);
+  // const fetchFAQs = async () => {
+  //   try {
+  //     const response = await axios.get('http://localhost:5000/faqs');
+  //     setQuestions(response.data);
+  //     setFilteredQuestions(response.data);
+  //   } catch (error) {
+  //     console.error('Error fetching FAQ data:', error);
+  //   }
+  // };
 
   return (
     <div className="w-full bg-white pt-20">
