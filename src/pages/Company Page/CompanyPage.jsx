@@ -51,7 +51,7 @@ function CompanyPage() {
                   <h1 className="text-CustomOrange font-bold text-5xl m-10">
                     Mission
                   </h1>
-                  <p className="text-black text-2xl">{val.mission}</p>
+                  <p className="text-customLBlue text-2xl">{val.mission}</p>
                   <h1 className="text-CustomOrange font-bold text-5xl m-10 ">
                     Vision
                   </h1>
