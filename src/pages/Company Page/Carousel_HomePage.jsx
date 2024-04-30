@@ -16,7 +16,7 @@ export function CarouselCustomNavigation() {
       // autoplay='true'
       loop='true'
       navigation={({ setActiveIndex, activeIndex, length }) => (
-        <div className="absolute top-0 left-0 z-50 w-full h-12 bg-customColor backdrop-filter backdrop-blur-3xl bg-opacity-50 flex items-center">
+        <div className="absolute top-0 left-0 z-50 w-full h-12 bg-companyBG flex items-center">
           {/* SVG */}
           <img
     src= {logo}
@@ -24,7 +24,7 @@ export function CarouselCustomNavigation() {
     className="ml-4 h-36 block cursor-pointer cover"
   />
           {/* Navigation Indicators */}
-          <div className="flex justify-end flex-grow gap-8">
+          <div className="flex justify-end flex-grow gap-10">
             {["Startup Company", "Startup Enabler", "Startup Mentor"].map(
               (text, index) => (
                 <span
