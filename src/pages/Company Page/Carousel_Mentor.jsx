@@ -57,7 +57,7 @@ return(
     </svg>
 
 {/* parent div */}
-  <div className="absolute top-80 right-20">
+  <div className="absolute top-72 right-36">
     <h1 className="text-CustomOrange font-bold">Are you qualified to mentor?</h1>
     {/* mentor description */}
     <div className="flex flex-col ml-8 mt-4">
